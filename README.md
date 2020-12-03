@@ -70,6 +70,6 @@ $ git push -u origin master
 
 Caso dê algum erro, pode ser que tenham mudanças no repositório remoto que você não tem no local ainda, então, para resolver, faça:
 ```sh
-$ git pull
+$ git pull origin master
 ```
 Agora tente o comando push novamente, o problema deve ter sido solucionado e seus arquivos já estão no repositório remoto.
