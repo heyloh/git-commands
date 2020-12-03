@@ -74,7 +74,7 @@ $ git pull origin master
 ```
 Agora tente o comando push novamente, o problema deve ter sido solucionado e seus arquivos já estão no repositório remoto.
 
-### 🐛 O que fazer com os conflitos entre local e remoto?
+### 🐛 Conflitos entre local e remoto.
 
 Quando duas ou mais pessoas que estão trabalhando em um mesmo repositório alteram um mesmo trecho de código ao mesmo tempo o código deixa de estar em sincronia. 
 
