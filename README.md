@@ -89,12 +89,12 @@ $ git remote add origin https://github.com/seu_usuario/nome_repositorio.git
 E então, para empurrar seu repositório local para o remoto, faça:
 
 ```sh
-$ git push -u origin master
+$ git push -u origin main
 ```
 
 Caso dê algum erro, pode ser que tenham mudanças no repositório remoto que você não tem no local ainda, então, para resolver, faça:
 ```sh
-$ git pull origin master
+$ git pull origin main
 ```
 Agora tente o comando push novamente, o problema deve ter sido solucionado e seus arquivos já estão no repositório remoto.
 
@@ -108,7 +108,7 @@ Então, se uma das pessoas empurra (push) essas alterações que ela fez de form
 
 1. Faça um Pull, isso significa puxar a versão do remoto para o seu local.
 ```sh
-  $ git pull origin master
+  $ git pull origin main
 ```
 > Isso começa um merge das alterações do remoto com as que você fez no local. 
 
