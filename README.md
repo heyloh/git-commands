@@ -38,3 +38,17 @@ $ git commit -m "Mensagem de commit"
 ```
 
 E pronto, commit feito!
+
+### 🚦 Mas perai, como eu sei o estado dos arquivos?
+
+Pra isso você o seguinte:
+```sh
+$ git status
+```
+Esse comando mostra quais arquivos foram modificados, quais não foram e quais estão prontos para o commit.
+
+Caso todos os arquivos já tenham sido enviados para commit, a mensagem que você deve receber é:
+```sh
+On branch master # ou main
+nothing to commit, working tree clean
+```
