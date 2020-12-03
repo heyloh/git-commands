@@ -18,7 +18,7 @@ Simples, digite o seguinte:
 $ git add .
 ```
 
-O  .  no comando adiciona todos os arquivos modificados para o próximo commit. Caso você não deseje isso, há outras formas:
+O **.** no comando adiciona todos os arquivos modificados para o próximo commit. Caso você não deseje isso, há outras formas:
 
 ```sh
 $ git add nome_do_arquivo.formato
