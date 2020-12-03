@@ -2,7 +2,7 @@
 
 ### 🚀 Como inicializar um repositório?
 
-Entre na pasta do projeto e digite:
+Entre na pasta do projeto no terminal e digite:
 
 ```sh
 $ git init
@@ -10,9 +10,9 @@ $ git init
 
 Pronto, repositório inicializado!
 
-### ➕ Como adicionar as mudanças realizadas para commitar?
+### ➕ Como adicionar as mudanças realizadas para commit?
 
-Simples, digite o seguinte:
+Simples, digite o seguinte no terminal:
 
 ```sh
 $ git add .
@@ -88,6 +88,6 @@ Então, se uma das pessoas empurra (push) essas alterações que ela fez de form
 ```
 > Isso começa um merge das alterações do remoto com as que você fez no local. 
 
-3. Com alterações em mesmas linhas, o git irá pedir que você mesmo solucione os conflitos do arquivo em questão, porque as alterações são drásticas.
-4. Abra o arquivo e faça as alterações que forem necessárias, que você deseja.
+2. Com alterações em mesmas linhas, o git irá pedir que você mesmo solucione os conflitos do arquivo em questão, porque as alterações são drásticas.
+3. Abra o arquivo e faça as alterações que forem necessárias, que você deseja.
 4. Agora sim, dê um **git add**, depois **git commit** e então faça um **git push** para o remoto.
