@@ -83,6 +83,11 @@ Então, se uma das pessoas empurra (push) essas alterações que ela fez de form
 #### 😭 O que fazer?!?!?
 
 1. Faça um Pull, isso significa puxar a versão do remoto para o seu local.
-2. Faça um merge das alterações do remoto com as que você fez no local. 
+```sh
+  $ git pull origin master
+```
+> Isso começa um merge das alterações do remoto com as que você fez no local. 
+
 3. Com alterações em mesmas linhas, o git irá pedir que você mesmo solucione os conflitos do arquivo em questão, porque as alterações são drásticas.
-4. Agora sim, faça um push para o remoto.
+4. Abra o arquivo e faça as alterações que forem necessárias, que você deseja.
+4. Agora sim, dê um **git add**, depois **git commit** e então faça um **git push** para o remoto.
