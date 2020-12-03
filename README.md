@@ -73,3 +73,16 @@ Caso dê algum erro, pode ser que tenham mudanças no repositório remoto que vo
 $ git pull origin master
 ```
 Agora tente o comando push novamente, o problema deve ter sido solucionado e seus arquivos já estão no repositório remoto.
+
+### 🐛 O que fazer com os conflitos entre local e remoto?
+
+Quando duas ou mais pessoas que estão trabalhando em um mesmo repositório alteram um mesmo trecho de código ao mesmo tempo o código deixa de estar em sincronia. 
+
+Então, se uma das pessoas empurra (push) essas alterações que ela fez de forma local para o remoto, as outros pessoas que estão fazendo alteração nesse mesmo trecho passam a ter um conflito e não conseguem mais empurrar suas modificações pro GitHub.
+
+#### 😭 O que fazer?!?!?
+
+1. Faça um Pull, isso significa puxar a versão do remoto para o seu local.
+2. Faça um merge das alterações do remoto com as que você fez no local. 
+3. Com alterações em mesmas linhas, o git irá pedir que você mesmo solucione os conflitos do arquivo em questão, porque as alterações são drásticas.
+4. Agora sim, faça um push para o remoto.
