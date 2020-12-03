@@ -5,7 +5,7 @@
 Entre na pasta do projeto e digite:
 
 ```sh
-  $ git init
+$ git init
 ```
 
 Pronto, repositório inicializado!
@@ -15,17 +15,26 @@ Pronto, repositório inicializado!
 Simples, digite o seguinte:
 
 ```sh
-  $ git add .
+$ git add .
 ```
 
 O  .  no comando adiciona todos os arquivos modificados para o próximo commit. Caso você não deseje isso, há outras formas:
 
 ```sh
-  $ git add nome_do_arquivo.formato
+$ git add nome_do_arquivo.formato
 ```
 
 Ou, caso deseje adicionar uma pasta:
 
 ```sh
-  $ git add nome_da_pasta/
+$ git add nome_da_pasta/
 ```
+
+### ✅ Mas e agora? Como faço o commit?
+
+Seguinte, digita aí no terminal:
+```sh
+$ git commit -m "Mensagem de commit"
+```
+
+E pronto, commit feito!
