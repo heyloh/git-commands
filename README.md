@@ -49,13 +49,37 @@ Esse comando mostra quais arquivos foram modificados, quais não foram, quais ai
 
 Caso todos os arquivos já tenham sido enviados para commit, a mensagem que você deve receber é:
 ```sh
-On branch master # ou main
+On branch master
 nothing to commit, working tree clean
 ```
 
 ### 🤔 Como conectar seu repositório local ao remoto?
 
-Após criar seu repositório Remoto no GitHub, copie o link .git do repositório, seja ele ssh ou https.
+
+#### Renomeando a master por main
+
+Antes de qualquer coisa, vamos fazer uma pequena mudança. Há 
+pouco tempo o Github mudou sua branch padrão de master para main e quando você dá 
+um git init para iniciar um repositório local a branch padrão é a master, 
+para ficar de acordo com o padrão do github vamos renomear a branch do seu repositório
+local:
+
+```sh
+$ git branch -m main
+```
+
+Caso queira saber, branch é como uma linha do tempo, você pode 
+ter várias branches no seu repositório, mas, como renomeamos, a 
+principal será a main. 
+
+É interessante trabalhar com branches conforme for criando novas 
+funcionalidades no seu projeto, para evitar de quebrar as existentes e lançar 
+somente quando tudo estiver certo com ela, mas é opcional e por enquanto você 
+só precisa da main!
+
+#### Conectando o local ao remoto
+
+Após criar seu repositório Remoto no GitHub, copie o link .git do repositório.
 
 Depois de fazer isso, faça o seguinte:
 ```sh
