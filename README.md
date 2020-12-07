@@ -1,5 +1,23 @@
 # 💻 Git (Command Line Interface)
 
+<details>
+<summary>
+  <strong>🔍 Sumário</strong>
+</summary>
+
+>
+> *[🚀 Como inicializar um repositório](#1)*\
+> *[➕ Como adicionar as mudanças realizadas para commit?](#2)*\
+> *[✅ Mas e agora? Como faço o commit?](#3)*\
+> *[🚦 Mas perai, como eu sei o estado dos arquivos?](#4)*\
+> *[🤔 Como conectar seu repositório local ao remoto?](#5)*\
+> *[🐛 Conflitos entre local e remoto.](#6)*
+>
+</details>
+<hr>
+
+<div id="1"></div>
+
 ### 🚀 Como inicializar um repositório?
 
 Entre na pasta do projeto no terminal e digite:
@@ -9,6 +27,8 @@ $ git init
 ```
 
 Pronto, repositório inicializado!
+
+<div id="2"></div>
 
 ### ➕ Como adicionar as mudanças realizadas para commit?
 
@@ -30,6 +50,8 @@ Ou, caso deseje adicionar uma pasta:
 $ git add nome_da_pasta/
 ```
 
+<div id="3"></div>
+
 ### ✅ Mas e agora? Como faço o commit?
 
 Seguinte, digita aí no terminal:
@@ -38,6 +60,8 @@ $ git commit -m "Mensagem de commit"
 ```
 
 E pronto, commit feito!
+
+<div id="4"></div>
 
 ### 🚦 Mas perai, como eu sei o estado dos arquivos?
 
@@ -52,6 +76,8 @@ Caso todos os arquivos já tenham sido enviados para commit, a mensagem que voc�
 On branch master
 nothing to commit, working tree clean
 ```
+
+<div id="5"></div>
 
 ### 🤔 Como conectar seu repositório local ao remoto?
 
@@ -97,6 +123,8 @@ Caso dê algum erro, pode ser que tenham mudanças no repositório remoto que vo
 $ git pull origin main
 ```
 Agora tente o comando push novamente, o problema deve ter sido solucionado e seus arquivos já estão no repositório remoto.
+
+<div id="6"></div>
 
 ### 🐛 Conflitos entre local e remoto.
 
