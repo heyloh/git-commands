@@ -65,7 +65,7 @@ E pronto, commit feito!
 
 ### 🚦 Mas perai, como eu sei o estado dos arquivos?
 
-Pra isso você o seguinte:
+Pra isso você faz o seguinte:
 ```sh
 $ git status
 ```
