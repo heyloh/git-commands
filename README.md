@@ -8,11 +8,12 @@
 >
 > *[🚀 Como inicializar um repositório](#1)*\
 > *[➕ Como adicionar as mudanças realizadas para commit?](#2)*\
-> *[✅ Mas e agora? Como faço o commit?](#3)*\
-> *[🚦 Mas perai, como eu sei o estado dos arquivos?](#4)*\
-> *[🤔 Como conectar seu repositório local ao remoto?](#5)*\
-> *[🐛 Conflitos entre local e remoto.](#6)*\
-> *[🤝 Contribuindo com repositórios de terceiros](#7)*
+> *[➖ Como remover as mudanças recém-adicionadas?](#3)*\
+> *[✅ Mas e agora? Como faço o commit?](#4)*\
+> *[🚦 Mas perai, como eu sei o estado dos arquivos?](#5)*\
+> *[🤔 Como conectar seu repositório local ao remoto?](#6)*\
+> *[🐛 Conflitos entre local e remoto.](#7)*\
+> *[🤝 Contribuindo com repositórios de terceiros](#8)*
 >
 </details>
 <hr>
@@ -53,6 +54,51 @@ $ git add nome_da_pasta/
 
 <div id="3"></div>
 
+### ➖ Como remover as mudanças recém-adicionadas?
+
+Putz, quando você fez seu **git add** você acabou adicionando algumas coisas que não 
+queria? Tranquilo, bora aprender a remover isso!
+
+#### 👉👈 Quero remover só um arquivo
+
+É bem parecido com a forma mostrada no **git add**, só muda o comando:
+```sh
+$ git rm --cached nome_do_arquivo.formato
+```
+
+#### 🔥 Eu quero remover é tudo! 
+
+Aí vamos mudar uma coisinha, pra remover tudo que foi adicionado para commit 
+você precisa passar uma outra flag no seu comando, a flag **-R**, que permite 
+fazer isso de forma recursiva, de forma que remove arquivos e pastas que podem 
+estar dentro de outras pastas:
+
+```sh
+$ git rm --cached -R .
+```
+
+#### 😏 Eu quero remover só uma pasta do projeto
+
+Simples, faz aí:
+```sh
+$ git rm --cached -R nome_da_pasta/
+```
+
+#### 🙈 Quero que o git add ignore esses arquivos! Como faço?
+
+Quando você tem um arquivo que você não quer incluir no seu repositório, como o 
+famoso **.env**, a pasta **node_modules**, ou qualquer arquivo sensível, você 
+pode falar pro git ignorar esse arquivo ou pasta da seguinte forma:
+
+1. Na raiz do seu projeto, crie um arquivo chamado **.gitignore**
+2. Dentro desse arquivo, digite o nome das pastas e arquivos que você não quer incluir
+> Você pode encontrar um exemplo de [.gitignore](https://github.com/heyloh/git-commands/blob/main/.gitignore) na raiz desse repositório.
+
+Simples assim, agora você pode dar **git add .** sem se preocupar se esses arquivos/pastas 
+serão incluídos.
+
+<div id="4"></div>
+
 ### ✅ Mas e agora? Como faço o commit?
 
 Seguinte, digita aí no terminal:
@@ -62,7 +108,9 @@ $ git commit -m "Mensagem de commit"
 
 E pronto, commit feito!
 
-<div id="4"></div>
+> **Em breve:** Como remover os arquivos depois do commit
+
+<div id="5"></div>
 
 ### 🚦 Mas perai, como eu sei o estado dos arquivos?
 
@@ -78,7 +126,7 @@ On branch master
 nothing to commit, working tree clean
 ```
 
-<div id="5"></div>
+<div id="6"></div>
 
 ### 🤔 Como conectar seu repositório local ao remoto?
 
@@ -125,7 +173,7 @@ $ git pull origin main
 ```
 Agora tente o comando push novamente, o problema deve ter sido solucionado e seus arquivos já estão no repositório remoto.
 
-<div id="6"></div>
+<div id="7"></div>
 
 ### 🐛 Conflitos entre local e remoto.
 
@@ -145,14 +193,14 @@ Então, se uma das pessoas empurra (push) essas alterações que ela fez de form
 3. Abra o arquivo e faça as alterações que forem necessárias, que você deseja.
 4. Agora sim, dê um **git add**, depois **git commit** e então faça um **git push** para o remoto.
 
-<div id="7"></div>
+<div id="8"></div>
 
 ### 🤝 Contribuindo com repositórios de terceiros
 
 Um grande diferencial de plataformas **open-source** é a possibilidade de **contribuir com repositórios de terceiros**, para isso é preciso seguir os seguintes passos:
 
 **1 .** Vá até o repositório que deseja contribuir `https://github.com/Username/Nome_do_repositório`
-<br><br>
+<br>
 
 **2 .** Fork o repositório, com isso você criará uma **ramificação** do repositório principal, a qual poderá fazer mudanças, <br>
        pois essa será a **SUA** versão do projeto principal 
