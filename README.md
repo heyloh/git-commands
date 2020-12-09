@@ -11,7 +11,8 @@
 > *[✅ Mas e agora? Como faço o commit?](#3)*\
 > *[🚦 Mas perai, como eu sei o estado dos arquivos?](#4)*\
 > *[🤔 Como conectar seu repositório local ao remoto?](#5)*\
-> *[🐛 Conflitos entre local e remoto.](#6)*
+> *[🐛 Conflitos entre local e remoto.](#6)*\
+> *[🤝 Contribuindo com repositórios de terceiros](#7)*
 >
 </details>
 <hr>
@@ -143,3 +144,41 @@ Então, se uma das pessoas empurra (push) essas alterações que ela fez de form
 2. Com alterações em mesmas linhas, o git irá pedir que você mesmo solucione os conflitos do arquivo em questão, porque as alterações são drásticas.
 3. Abra o arquivo e faça as alterações que forem necessárias, que você deseja.
 4. Agora sim, dê um **git add**, depois **git commit** e então faça um **git push** para o remoto.
+
+<div id="7"></div>
+
+### 🤝 Contribuindo com repositórios de terceiros
+
+Um grande diferencial de plataformas **open-source** é a possibilidade de **contribuir com repositórios de terceiros**, para isso é preciso seguir os seguintes passos:
+
+**1 .** Vá até o repositório que deseja contribuir `https://github.com/Username/Nome_do_repositório`
+<br><br>
+
+**2 .** Fork o repositório, com isso você criará uma **ramificação** do repositório principal, a qual poderá fazer mudanças, <br>
+       pois essa será a **SUA** versão do projeto principal 
+
+**3 .** Clone seu repositório "forkado" do projeto principal com:<br>
+```sh
+$ git clone https://github.com/Seu_Username/Nome_do_repositório.git
+```
+
+**4 .** Crie uma nova Branch: <br>
+ ```sh
+ $ cd repositório
+ $ git branch nome_da_nova_branch
+ ```
+ 
+ **5 .** Mude para a nova branch: 
+ ```sh
+ $ git checkout nome_da_nova_branch
+ ```
+ 
+ **6 .** Faça alterações no seu repositório "forkado" e use o comando push <br>
+ já que esta ultilizando uma nova branch, use o comando 
+ ```sh
+ $ git push --set-upstream origin nome_da_nova_branch
+ ```
+ 
+ **7 .** No github clique em **"Compare e Pull Request"** para enviar para o usuário do repositório as mudanças feitas comparadas com o repositório principal, com isso ele irá analisar as alterações e decidir aceitar ou não suas mudanças, com um Merge(adicionar suas mudanças ao codigo principal) <br>
+**obs: importante deixar um comentário no pull request, explicando oque foi alterado no código**
+
