@@ -25,6 +25,7 @@
 Entre na pasta do projeto no terminal e digite:
 
 ```sh
+$ cd meu-projeto/ # Caso não saiba, é assim que se locomove pra pastas no terminal
 $ git init
 ```
 
